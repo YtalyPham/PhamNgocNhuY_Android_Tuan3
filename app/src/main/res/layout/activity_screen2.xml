@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen2">
+
+    <ImageView
+        android:id="@+id/imghinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vsmartlivexanh11" />
+
+    <TextView
+        android:id="@+id/txtten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:text="Điện thoại Vsmart Joy 3 "
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imghinh"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txthang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:text="Hàng chính hãng"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imghinh"
+        app:layout_constraintTop_toBottomOf="@+id/txtten" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:background="#E4E4E4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnxanhnhat"
+        android:layout_width="85dp"
+        android:layout_height="84dp"
+        app:backgroundTint="#C5F1FB"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btnxanhdam"
+        android:layout_width="85dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="8dp"
+        app:backgroundTint="#234896"
+        app:layout_constraintStart_toStartOf="@+id/btnden"
+        app:layout_constraintTop_toBottomOf="@+id/btnden" />
+
+    <Button
+        android:id="@+id/btnden"
+        android:layout_width="85dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="8dp"
+        app:backgroundTint="#000000"
+        app:layout_constraintStart_toStartOf="@+id/btndo"
+        app:layout_constraintTop_toBottomOf="@+id/btndo" />
+
+    <Button
+        android:id="@+id/btndo"
+        android:layout_width="85dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="8dp"
+        app:backgroundTint="#F30D0D"
+        app:layout_constraintStart_toStartOf="@+id/btnxanhnhat"
+        app:layout_constraintTop_toBottomOf="@+id/btnxanhnhat" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Chọn màu bên dưới"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/conner_screen1"
+        android:text="Xong"
+        app:backgroundTint="#4D6EC1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
